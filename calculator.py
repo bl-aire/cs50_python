@@ -14,3 +14,15 @@ print(a + b)
 print(round(0.05555, 2))
 print(f"{a:.3f}")
 
+# Return
+
+def main():
+    q= int(input("Enter a number for q: "))
+    print("q squared is:", square(q))
+
+def square(n):
+    return n ** 2
+    # n * n....n ** 2...pow(n, 2)
+
+main()
+
