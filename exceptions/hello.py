@@ -7,13 +7,13 @@ print("Hello, World!")
 # Else, tell them to input a number!
 
 def main():
-    x = get_int()
+    x = get_int("What is x?")
     print(f"x is {x}")
 
-def get_int():
+def get_int(prompt):
     while True:
         try:
-            return int(input("Enter a number between 0 to infinity: "))
+            return int(input(prompt))
         except ValueError:
             pass
             # print("Please enter a number, boo! x is not an integer.")
