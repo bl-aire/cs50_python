@@ -12,6 +12,7 @@ with open('students.csv') as file:
     reader = csv.DictReader(file)
     for row in reader:
         students.append({"name": row["name"], "home": row["home"]})
+        # students.append(row) also works here
 
 # Loop through students array, sort array via student name key and print output
 # Lambda is an anonymous function that accepts student as a parameter and returns the name variable
