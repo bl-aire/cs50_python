@@ -1,10 +1,9 @@
 import re
 
 name = input ("What is your name? ").strip()
-matches = re.search(r"^(.+), ?(.+)$", name)
 # Here () is used for capturing or returning values
 # Whitespace is made optional with ?
-if matches:
+if matches := re.search(r"^(.+), ?(.+)$", name):
     name = matches.group(2) + " " + matches.group(1)
 print(f"Hello,{name}")
 
