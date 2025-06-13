@@ -7,13 +7,15 @@ def main():
 
 def get_student():
     name = input("What is your name? ")
-    house = input("What is your name? ")
+    house = input("What is your location? ")
+    # tuple
     return name, house
 
 def get_student2():
+    # dictionary
     student = {
         'name': input("What is your name? "),
-        'house': input("What is your name? ")
+        'house': input("What is your location? ")
     }
     return student
 
