@@ -3,6 +3,9 @@ def main():
     print(f"Hello, {student[0]} from {student[1]}!")
 
     student2 = get_student2()
+    # Even if user enters location for Padma, Ravenclaw overrides it
+    if student2['name'] == "Padma":
+        student2['house'] = "Ravenclaw"
     print(f"Hello, {student2['name']} from {student2['house']}!")
 
 def get_student():
