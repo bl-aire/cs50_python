@@ -1,6 +1,4 @@
 # CREATE CUSTOM METHOD
-from unittest import case
-
 
 class Student:
     def __init__(self, name, house, patronus):
