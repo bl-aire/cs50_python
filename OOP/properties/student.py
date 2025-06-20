@@ -36,7 +36,6 @@ def main():
     #....hence, we take out line 31 and use the setter when _house needs to be updated
     # self.house in other parts of the code call the setter
     # Instance variable = _house but Property is called house
-
     # student.house = "Number Four, Privet Drive"
     print(student)
 
